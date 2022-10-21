@@ -1,0 +1,2 @@
+class
+export default Form

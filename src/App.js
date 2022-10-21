@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Content from './Components/Content';
+import Form from './Components/Form';
+import Header from './Components/Header'
+import Items from './Components/Items';
+import NameList from './Components/NameList';
+import Timer from './Components/Timer';
+import ToDoList from './Components/ToDoList';
+import UserGreeting from './Components/UserGreeting';
+import Welcome from './Welcome';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App  extends React.Component {
+  state={
+    item:[
+      {id:1,name:'om',age:11},
+      {id:2,name:'omn',age:12},
+      {id:4,name:'omnia',age:14}
+    ]
+  }
+  render(){
+    
+    return(
+      <>
+  <Items items={this.state.item}/>
+   <Timer/>
+    </>
+    );
+  }
 }
 
-export default App;
+export default App
