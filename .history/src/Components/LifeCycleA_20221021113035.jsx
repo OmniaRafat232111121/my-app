@@ -1,0 +1,23 @@
+import React, { Component } from 'react'
+
+export class LifeCycleA extends Component {
+    constructor(props){
+     super(props)
+     this.state={
+        name:'omnia'
+     }
+     console.log('LifecycleA from constructor')
+    }
+    static getDerviedStateFromProps(props,state){
+        console.log('LifeCyleA Get dervied statefromProps')
+    }
+  render() {
+    return (
+      <div>
+        <h1
+      </div>
+    )
+  }
+}
+
+export default LifeCycleA
