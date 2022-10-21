@@ -70,7 +70,7 @@ const App = () => {
   return (
     <div>
 <Person1/>
-<Person2/>
+<Person2
     </div>
   )
 }

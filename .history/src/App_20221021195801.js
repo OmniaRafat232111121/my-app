@@ -62,15 +62,12 @@
 import React from 'react'
 import { PureComponent } from 'react/cjs/react.development'
 import ClickCounter from './Components/ClickCounter'
-import Person1 from './Components/Person1'
-import Person2 from './Components/Person2'
 
 
 const App = () => {
   return (
     <div>
-<Person1/>
-<Person2/>
+<Person
     </div>
   )
 }
